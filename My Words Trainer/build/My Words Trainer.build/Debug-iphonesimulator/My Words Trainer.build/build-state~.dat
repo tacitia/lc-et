@@ -1,0 +1,258 @@
+TMy Words Trainer
+v7
+r0
+t314867918.390402
+cCheck dependencies
+cProcessInfoPlistFile "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/Info.plist" My_Words_Trainer-Info.plist
+cCompileXIB "/homes/cs_lhxac/Documents/My Words Trainer/MainWindow.xib"
+cCompileXIB "/homes/cs_lhxac/Documents/My Words Trainer/My_Words_TrainerViewController.xib"
+cProcessPCH /var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch.gch My_Words_Trainer_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/main.o" "/homes/cs_lhxac/Documents/My Words Trainer/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerAppDelegate.o" "/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerViewController.o" "/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer" normal i386
+cGenerateDSYMFile "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app.dSYM" "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer"
+cTouch "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
+c000000004C6C30170000000000000110
+t1282158615
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A4DB60000000000295900
+t1280986550
+s2709760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A4DB0000000000029D580
+t1280986544
+s2741632
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A4DA10000000000001466
+t1280986529
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C6241ED00000000000009CD
+t1281507821
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C6242840000000001E228C0
+t1281507972
+s31598784
+
+N/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.h
+c000000004D1444A00000000000000218
+t1293173920
+s536
+i<UIKit/UIKit.h>
+
+N/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m
+c000000004D1444A00000000000000ABB
+t1293173920
+s2747
+i"My_Words_TrainerAppDelegate.h"
+i"My_Words_TrainerViewController.h"
+
+N/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.h
+c000000004D1444A0000000000000010C
+t1293173920
+s268
+i<UIKit/UIKit.h>
+
+N/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m
+c000000004D1444A000000000000005E0
+t1293173920
+s1504
+i"My_Words_TrainerViewController.h"
+
+N/homes/cs_lhxac/Documents/My Words Trainer/MainWindow.xib
+c000000004D1444A00000000000004E95
+t1293173920
+s20117
+
+N/homes/cs_lhxac/Documents/My Words Trainer/My_Words_TrainerViewController.xib
+c000000004D1444A00000000000001A69
+t1293173920
+s6761
+
+N/homes/cs_lhxac/Documents/My Words Trainer/My_Words_Trainer_Prefix.pch
+c000000004D1444A000000000000000C9
+t1293173920
+s201
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app
+t1293175118
+s238
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app.dSYM
+t1293175118
+s102
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/Info.plist
+t1293175116
+s633
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/MainWindow.nib
+t1293175117
+s1699
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer
+t1293175118
+s17560
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My_Words_TrainerViewController.nib
+t1293175117
+s1269
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/PkgInfo
+t1293175116
+s8
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My Words Trainer.LinkFileList
+c000000004D14494C00000000000001E1
+t1293175116
+s481
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerAppDelegate.o
+t1293175118
+s48308
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerViewController.o
+t1293175118
+s34648
+
+N/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/main.o
+t1293175118
+s6312
+
+N/homes/cs_lhxac/Documents/My Words Trainer/main.m
+c000000004D1444A00000000000000175
+t1293173920
+s373
+i<UIKit/UIKit.h>
+
+N/var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch.gch
+t1293175118
+s15211536
+
+NMy_Words_Trainer-Info.plist
+c000000004D1444A0000000000000038D
+t1293173920
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies314867916#314867916#0(0"0(0#1#0"32088628383449192#0"0#
+
+CCompileC "build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerAppDelegate.o" "/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s314867918.079158
+e314867918.227225
+r1
+xCompileC
+xbuild/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerAppDelegate.o
+x/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m314867918#314867918#0(0"0(0#0#80"/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m8601006176#2216"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-generated-files.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-own-target-headers.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-all-target-headers.hmap" -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-project-headers.hmap" "-F/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/include" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources/i386" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch -c "/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerAppDelegate.m" -o "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerAppDelegate.o"0#
+
+CCompileC "build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerViewController.o" "/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s314867918.220063
+e314867918.272978
+r1
+xCompileC
+xbuild/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerViewController.o
+x/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m314867918#314867918#0(0"0(0#0#83"/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m8600600160#2222"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-generated-files.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-own-target-headers.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-all-target-headers.hmap" -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-project-headers.hmap" "-F/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/include" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources/i386" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch -c "/homes/cs_lhxac/Documents/My Words Trainer/Classes/My_Words_TrainerViewController.m" -o "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My_Words_TrainerViewController.o"0#
+
+CCompileC "build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/main.o" "/homes/cs_lhxac/Documents/My Words Trainer/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s314867918.078096
+e314867918.219889
+r1
+xCompileC
+xbuild/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/main.o
+x/homes/cs_lhxac/Documents/My Words Trainer/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@57"Compile /homes/cs_lhxac/Documents/My Words Trainer/main.m314867918#314867918#0(0"0(0#0#49"/homes/cs_lhxac/Documents/My Words Trainer/main.m8601413600#2162"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-generated-files.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-own-target-headers.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-all-target-headers.hmap" -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-project-headers.hmap" "-F/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/include" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources/i386" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources" -include /var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch -c "/homes/cs_lhxac/Documents/My Words Trainer/main.m" -o "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/homes/cs_lhxac/Documents/My Words Trainer/MainWindow.xib"
+s314867916.979806
+e314867917.341332
+r1
+xCompileXIB
+x/homes/cs_lhxac/Documents/My Words Trainer/MainWindow.xib
+o2010-12-24 15:18:37.239 Interface Builder Cocoa Touch Tool[17639:1b03] CFPreferences: user home directory at file://localhost/homes/cs_lhxac/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF07#2@25"CompileXIB MainWindow.xib314867916#314867917#0(243"2010-12-24 15:18:37.239 Interface Builder Cocoa Touch Tool[17639:1b03] CFPreferences: user home directory at file://localhost/homes/cs_lhxac/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.0(0#0#57"/homes/cs_lhxac/Documents/My Words Trainer/MainWindow.xib8603400256#597"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/MainWindow.nib" "/homes/cs_lhxac/Documents/My Words Trainer/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCompileXIB "/homes/cs_lhxac/Documents/My Words Trainer/My_Words_TrainerViewController.xib"
+s314867916.980496
+e314867917.312835
+r1
+xCompileXIB
+x/homes/cs_lhxac/Documents/My Words Trainer/My_Words_TrainerViewController.xib
+o2010-12-24 15:18:37.215 Interface Builder Cocoa Touch Tool[17638:1b03] CFPreferences: user home directory at file://localhost/homes/cs_lhxac/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF07#2@45"CompileXIB My_Words_TrainerViewController.xib314867916#314867917#0(243"2010-12-24 15:18:37.215 Interface Builder Cocoa Touch Tool[17638:1b03] CFPreferences: user home directory at file://localhost/homes/cs_lhxac/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.0(0#0#77"/homes/cs_lhxac/Documents/My Words Trainer/My_Words_TrainerViewController.xib8599662848#637"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My_Words_TrainerViewController.nib" "/homes/cs_lhxac/Documents/My Words Trainer/My_Words_TrainerViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CGenerateDSYMFile "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app.dSYM" "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer"
+s314867918.339711
+e314867918.374930
+r1
+xGenerateDSYMFile
+x/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app.dSYM
+x/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer
+lSLF07#2@140"GenerateDSYMFile "build/Debug-iphonesimulator/My Words Trainer.app.dSYM" "build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer"314867918#314867918#0(0"0(0#0#108"/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer8599234336#428"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer" -o "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app.dSYM"0#
+
+CLd "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer" normal i386
+s314867918.273055
+e314867918.339628
+r1
+xLd
+x/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer
+xnormal
+xi386
+lSLF07#2@113"Link /homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer314867918#314867918#0(0"0(0#0#0"8593399680#975"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk "-L/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator" "-F/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator" -filelist "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/Objects-normal/i386/My Words Trainer.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/My Words Trainer"0#
+
+CProcessInfoPlistFile "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/Info.plist" My_Words_Trainer-Info.plist
+s314867916.960633
+e314867916.979726
+r1
+xProcessInfoPlistFile
+x/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/Info.plist
+xMy_Words_Trainer-Info.plist
+lSLF07#2@35"Process My_Words_Trainer-Info.plist314867916#314867916#0(0"0(0#0#70"/homes/cs_lhxac/Documents/My Words Trainer/My_Words_Trainer-Info.plist3414973617650413568#524"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility My_Words_Trainer-Info.plist -genpkginfo "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app/Info.plist"0#
+
+CProcessPCH /var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch.gch My_Words_Trainer_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s314867917.341452
+e314867918.077988
+r1
+xProcessPCH
+x/var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch.gch
+xMy_Words_Trainer_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@38"Precompile My_Words_Trainer_Prefix.pch314867917#314867918#0(0"0(0#0#70"/homes/cs_lhxac/Documents/My Words Trainer/My_Words_Trainer_Prefix.pch8603387520#2039"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-generated-files.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-own-target-headers.hmap" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-all-target-headers.hmap" -iquote "/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/My Words Trainer-project-headers.hmap" "-F/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/include" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources/i386" "-I/homes/cs_lhxac/Documents/My Words Trainer/build/My Words Trainer.build/Debug-iphonesimulator/My Words Trainer.build/DerivedSources" -c "/homes/cs_lhxac/Documents/My Words Trainer/My_Words_Trainer_Prefix.pch" -o /var/folders/zz/zzzivhrRnAmviuee++0L7E++ZmI/-Caches-/com.apple.Xcode.38693/SharedPrecompiledHeaders/My_Words_Trainer_Prefix-dvprhbegbplkcagvdjgjpszbmcji/My_Words_Trainer_Prefix.pch.gch0#
+
+CTouch "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app"
+s314867918.375006
+e314867918.390356
+r1
+xTouch
+x/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app
+lSLF07#2@97"Touch /homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app314867918#314867918#0(0"0(0#0#0"8603473216#299"    cd "/homes/cs_lhxac/Documents/My Words Trainer"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/homes/cs_lhxac/Documents/My Words Trainer/build/Debug-iphonesimulator/My Words Trainer.app"0#
+
