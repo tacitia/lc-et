@@ -7,17 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UVTRootViewController.h"
 
 
 @interface MainViewController : UIViewController {
 	UIButton* uvtButton;
-
-	UIView* uvtIntroView;
-	
-//	UVTRootViewController* uvtRootViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton* uvtButton;
+
 
 - (IBAction) uvtButtonClicked;
 
