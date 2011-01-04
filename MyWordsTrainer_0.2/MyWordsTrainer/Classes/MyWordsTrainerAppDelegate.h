@@ -22,7 +22,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) MainViewController* mainViewController; 
+@property (nonatomic, retain) IBOutlet MainViewController* mainViewController; 
 @property (nonatomic, retain) IBOutlet UINavigationController* uvtNavigationController;
 @property (nonatomic, retain) IBOutlet UITabBarController* rootViewController;
 @property (nonatomic, retain) IBOutlet UVTRootViewController* uvtRootViewController;
