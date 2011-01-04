@@ -15,7 +15,6 @@
 @synthesize usages;
 
 -(id)initWithWord:(NSString*)theWord meanings:(NSDictionary*)theMeanings usages:(NSDictionary*)theUsages {
-	printf("dodo");
 	self.word = theWord;
 	self.meanings = [NSDictionary dictionaryWithDictionary:theMeanings];
 	self.usages = [NSDictionary dictionaryWithDictionary:theUsages];
