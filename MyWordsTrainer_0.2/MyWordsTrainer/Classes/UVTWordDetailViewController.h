@@ -11,12 +11,12 @@
 
 @interface UVTWordDetailViewController : UIViewController {
 
-	UITextView* wordDetailTextView;
+	UIWebView* wordDetailTextView;
 	UISegmentedControl* meaningUsageSegmentedControl;
 	UVTWord* selectedUVTWord;
 }
 
-@property (nonatomic, retain) IBOutlet UITextView* wordDetailTextView;
+@property (nonatomic, retain) IBOutlet UIWebView* wordDetailTextView;
 @property (nonatomic, retain) IBOutlet UISegmentedControl* meaningUsageSegmentedControl;
 @property (nonatomic, retain) UVTWord* selectedUVTWord;
 

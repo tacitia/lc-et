@@ -19,27 +19,41 @@
 - (IBAction) segmentedControlIndexChanged{
 	switch (self.meaningUsageSegmentedControl.selectedSegmentIndex) {
 		case 0: {
-			NSString* textToDisplay = @"";
+			NSString* textToDisplay = @"<table border = \"0\">";
 			NSArray* meanings = [selectedUVTWord.meanings allKeys];
 			for (NSString* meaning in meanings) {
 				NSString* meaningType = [selectedUVTWord.meanings objectForKey:meaning];
+				textToDisplay = [textToDisplay stringByAppendingString:@"<tr><td>"];
 				textToDisplay = [textToDisplay stringByAppendingString:meaningType];
+				textToDisplay = [textToDisplay stringByAppendingString:@"</td><td>"];
 				textToDisplay = [textToDisplay stringByAppendingString:meaning];
-				printf("!!!");
-				printf(&textToDisplay);
+				textToDisplay = [textToDisplay stringByAppendingString:@"</td></tr>"];
+				//printf(&textToDisplay);
 			}
-			wordDetailTextView.text = textToDisplay;
+			NSString* temp = @"</table>";
+			textToDisplay = [textToDisplay stringByAppendingString:temp];
+			NSLog(@"what!!");
+			[wordDetailTextView loadData:[textToDisplay dataUsingEncoding:NSUnicodeStringEncoding] MIMEType: @"text/html" textEncodingName:@"UTF-16" baseURL:[[NSURL alloc] initWithString: @""]];
 			break;
 		}
 		case 1: {
-			NSString* textToDisplay = @"";
+			NSString* textToDisplay = @"<table border = \"0\">";
 			NSArray* usages = [selectedUVTWord.usages allKeys];
 			for (NSString* usage in usages) {
 				NSString* usageType = [selectedUVTWord.usages objectForKey:usage];
+				textToDisplay = [textToDisplay stringByAppendingString:@"<tr><td>"];
 				textToDisplay = [textToDisplay stringByAppendingString:usageType];
+				textToDisplay = [textToDisplay stringByAppendingString:@"</td><td>"];
 				textToDisplay = [textToDisplay stringByAppendingString:usage];
+				textToDisplay = [textToDisplay stringByAppendingString:@"</td></tr>"];
+				//printf(&textToDisplay);
 			}
-			wordDetailTextView.text = textToDisplay;
+			NSString* temp = @"</table>";
+			textToDisplay = [textToDisplay stringByAppendingString:temp];
+			NSLog(@"what!!");
+			[wordDetailTextView loadData:[textToDisplay dataUsingEncoding:NSUnicodeStringEncoding] MIMEType: @"text/html" textEncodingName:@"UTF-16" baseURL:[[NSURL alloc] initWithString: @""]];
+			
+
 			break;
 		}
 		default:
