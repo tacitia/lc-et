@@ -12,14 +12,9 @@
 @implementation MainViewController
 
 @synthesize uvtButton;
-@synthesize uvtRootViewController;
+
 
 - (IBAction) uvtButtonClicked {
-	if (self.uvtRootViewController == nil) {
-		UVTRootViewController* tempViewController = [[UVTRootViewController alloc] initWithNibName:@"UVTRootViewController" bundle:[NSBundle mainBundle]];
-		self.uvtRootViewController = tempViewController;
-		[tempViewController release];
-	}
 
 }
 

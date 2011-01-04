@@ -11,9 +11,9 @@
 @implementation MyWordsTrainerAppDelegate
 
 @synthesize window;
-@synthesize rootViewController;
-@synthesize uvtNavigationController;
+@synthesize mainViewController;
 @synthesize uvtRootViewController;
+
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    [window addSubview:rootViewController.view];
+    [window addSubview:uvtRootViewController.view];
     [self.window makeKeyAndVisible];
     
     return YES;
