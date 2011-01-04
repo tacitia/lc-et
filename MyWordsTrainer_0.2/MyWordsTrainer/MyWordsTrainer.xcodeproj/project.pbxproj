@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MyWordsTrainerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MyWordsTrainerAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		3E1BF9ED12C88490001C63FC /* UVTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BF9EC12C88490001C63FC /* UVTRootViewController.m */; };
+		3E1BFA4612C88CA9001C63FC /* UVTRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1BFA4512C88CA9001C63FC /* UVTRootViewController.xib */; };
+		3E1BFAA312C8B86A001C63FC /* UVTWordDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1BFAA212C8B86A001C63FC /* UVTWordDetailViewController.xib */; };
+		3E1BFAAC12C8B8EF001C63FC /* UVTWordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BFAAB12C8B8EF001C63FC /* UVTWordDetailViewController.m */; };
+		3E1BFB2B12C8C82D001C63FC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1BFB2A12C8C82D001C63FC /* libsqlite3.0.dylib */; };
+		3E1BFB3012C8C8B3001C63FC /* UVTWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BFB2F12C8C8B3001C63FC /* UVTWord.m */; };
+		3ED60EC212D1DF6100031825 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED60EC112D1DF6100031825 /* MainViewController.xib */; };
+		3ED60EC712D1E28D00031825 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED60EC612D1E28D00031825 /* MainViewController.m */; };
+		3EFA1B9712CA5595000EDB5D /* uvtDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3EFA1B9612CA5595000EDB5D /* uvtDatabase.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MyWordsTrainerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWordsTrainerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MyWordsTrainerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWordsTrainerAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* MyWordsTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWordsTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MyWordsTrainer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWordsTrainer_Prefix.pch; sourceTree = "<group>"; };
+		3E1BF9EB12C88490001C63FC /* UVTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTRootViewController.h; sourceTree = "<group>"; };
+		3E1BF9EC12C88490001C63FC /* UVTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVTRootViewController.m; sourceTree = "<group>"; };
+		3E1BFA4512C88CA9001C63FC /* UVTRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTRootViewController.xib; sourceTree = "<group>"; };
+		3E1BFAA212C8B86A001C63FC /* UVTWordDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTWordDetailViewController.xib; sourceTree = "<group>"; };
+		3E1BFAAA12C8B8EF001C63FC /* UVTWordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTWordDetailViewController.h; sourceTree = "<group>"; };
+		3E1BFAAB12C8B8EF001C63FC /* UVTWordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVTWordDetailViewController.m; sourceTree = "<group>"; };
+		3E1BFB2A12C8C82D001C63FC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		3E1BFB2E12C8C8B3001C63FC /* UVTWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTWord.h; sourceTree = "<group>"; };
+		3E1BFB2F12C8C8B3001C63FC /* UVTWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVTWord.m; sourceTree = "<group>"; };
+		3ED60EC112D1DF6100031825 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3ED60EC512D1E28D00031825 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3ED60EC612D1E28D00031825 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3EFA1B9612CA5595000EDB5D /* uvtDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = uvtDatabase.sqlite; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MyWordsTrainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyWordsTrainer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				3E1BFB2B12C8C82D001C63FC /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* MyWordsTrainerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MyWordsTrainerAppDelegate.m */,
+				3E1BF9EB12C88490001C63FC /* UVTRootViewController.h */,
+				3E1BF9EC12C88490001C63FC /* UVTRootViewController.m */,
+				3E1BFAAA12C8B8EF001C63FC /* UVTWordDetailViewController.h */,
+				3E1BFAAB12C8B8EF001C63FC /* UVTWordDetailViewController.m */,
+				3E1BFB2E12C8C8B3001C63FC /* UVTWord.h */,
+				3E1BFB2F12C8C8B3001C63FC /* UVTWord.m */,
+				3ED60EC512D1E28D00031825 /* MainViewController.h */,
+				3ED60EC612D1E28D00031825 /* MainViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MyWordsTrainer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MyWordsTrainer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3ED60EC112D1DF6100031825 /* MainViewController.xib */,
+				3EFA1B9612CA5595000EDB5D /* uvtDatabase.sqlite */,
+				3E1BFAA212C8B86A001C63FC /* UVTWordDetailViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				3E1BFA4512C88CA9001C63FC /* UVTRootViewController.xib */,
+				8D1107310486CEB800E47090 /* MyWordsTrainer-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				3E1BFB2A12C8C82D001C63FC /* libsqlite3.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MyWordsTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MyWordsTrainer" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWordsTrainer;
+			productName = MyWordsTrainer;
+			productReference = 1D6058910D05DD3D006BFB54 /* MyWordsTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyWordsTrainer" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MyWordsTrainer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				3E1BFA4612C88CA9001C63FC /* UVTRootViewController.xib in Resources */,
+				3E1BFAA312C8B86A001C63FC /* UVTWordDetailViewController.xib in Resources */,
+				3EFA1B9712CA5595000EDB5D /* uvtDatabase.sqlite in Resources */,
+				3ED60EC212D1DF6100031825 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MyWordsTrainerAppDelegate.m in Sources */,
+				3E1BF9ED12C88490001C63FC /* UVTRootViewController.m in Sources */,
+				3E1BFAAC12C8B8EF001C63FC /* UVTWordDetailViewController.m in Sources */,
+				3E1BFB3012C8C8B3001C63FC /* UVTWord.m in Sources */,
+				3ED60EC712D1E28D00031825 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyWordsTrainer_Prefix.pch;
+				INFOPLIST_FILE = "MyWordsTrainer-Info.plist";
+				PRODUCT_NAME = MyWordsTrainer;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyWordsTrainer_Prefix.pch;
+				INFOPLIST_FILE = "MyWordsTrainer-Info.plist";
+				PRODUCT_NAME = MyWordsTrainer;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MyWordsTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyWordsTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
