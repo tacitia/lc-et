@@ -11,17 +11,21 @@
 @implementation MyWordsTrainerAppDelegate
 
 @synthesize window;
-@synthesize mainViewController;
-@synthesize uvtRootViewController;
+@synthesize navigationController;
+//@synthesize mainViewController;
+//@synthesize uvtRootViewController;
 
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+/*
+	[self.navigationController setNavigationBarHidden:YES];
+*/
+	self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
-    // Override point for customization after application launch.
-    [window addSubview:uvtRootViewController.view];
+	[self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
     
     return YES;

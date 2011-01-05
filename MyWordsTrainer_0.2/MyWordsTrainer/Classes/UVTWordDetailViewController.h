@@ -9,17 +9,30 @@
 #import <UIKit/UIKit.h>
 #import "UVTWord.h"
 
-@interface UVTWordDetailViewController : UIViewController {
+typedef enum {
+	Meaning = 1,
+	Usage = 2,
+	Question = 3
+} WordView;
 
-	UIWebView* wordDetailTextView;
-	UISegmentedControl* meaningUsageSegmentedControl;
+@interface UVTWordDetailViewController : UIViewController {
+	UIWebView* wordMeaningView;
+	UIWebView* wordUsageView;
+	UIWebView* wordQuestionView;
 	UVTWord* selectedUVTWord;
+	
+	WordView selectedWordView;
 }
 
-@property (nonatomic, retain) IBOutlet UIWebView* wordDetailTextView;
-@property (nonatomic, retain) IBOutlet UISegmentedControl* meaningUsageSegmentedControl;
+@property (nonatomic, retain) IBOutlet UIWebView* wordMeaningView;
+@property (nonatomic, retain) IBOutlet UIWebView* wordUsageView;
+@property (nonatomic, retain) IBOutlet UIWebView* wordQuestionView;
 @property (nonatomic, retain) UVTWord* selectedUVTWord;
+@property (nonatomic) WordView selectedWordView;
+//- (IBAction) segmentedControlIndexChanged;
 
-- (IBAction) segmentedControlIndexChanged;
+- (void)initMeaning;
+- (void)initUsage;
+- (void)initQuestion;
 
 @end

@@ -7,15 +7,30 @@
 //
 
 #import "MainViewController.h"
-
+#import "UVTRootViewController.h"
 
 @implementation MainViewController
 
 @synthesize uvtButton;
-
+@synthesize uvtIntroViewController;
 
 - (IBAction) uvtButtonClicked {
-
+	//Display an intro view before loading the UVTRootViewController
+	self.uvtIntroViewController = [[UIViewController alloc] initWithNibName:@"UVTIntroView" bundle:[NSBundle mainBundle]];
+	[self.view addSubview:uvtIntroViewController.view];
+	
+	[NSTimer scheduledTimerWithTimeInterval:1.5 
+									 target:self
+								   selector:@selector(loadUVTRootViewController)
+								   userInfo:nil
+									repeats:NO];
+}
+	 
+- (void) loadUVTRootViewController {
+	UVTRootViewController* uvtRootViewController = [[UVTRootViewController alloc] initWithNibName:@"UVTRootViewController" bundle:[NSBundle mainBundle]];
+//	[[self navigationController] setNavigationBarHidden:NO];
+	[[self navigationController] pushViewController:uvtRootViewController animated:YES];
+	[self.uvtIntroViewController.view removeFromSuperview];
 }
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -49,6 +64,16 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
+- (void)viewWillAppear:(BOOL)animated {
+	[self.navigationController setNavigationBarHidden:YES animated:animated];
+	[super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[self.navigationController setNavigationBarHidden:NO animated:animated];
+	[super viewWillDisappear:animated];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

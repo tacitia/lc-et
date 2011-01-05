@@ -10,11 +10,11 @@
 #import "UVTRootViewController.h"
 
 @interface UVTMainViewController : UIViewController {
-	UVTRootViewController* uvtRootViewController;
-	UINavigationController* uvtNavigationController;	
+//	UVTRootViewController* uvtRootViewController;
+	//UINavigationController* uvtNavigationController;	
 }
 
-@property (nonatomic, retain) UVTRootViewController* uvtRootViewController;
-@property (nonatomic, retain) UINavigationController* uvtNavigationController;
+//@property (nonatomic, retain) IBOutlet UVTRootViewController* uvtRootViewController;
+//@property (nonatomic, retain) IBOutlet UINavigationController* uvtNavigationController;
 
 @end

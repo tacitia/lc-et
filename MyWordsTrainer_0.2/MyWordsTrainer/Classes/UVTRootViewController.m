@@ -6,6 +6,8 @@
 //  Copyright 2010 HKUST. All rights reserved.
 //
 
+#include<stdlib.h>
+
 #import "UVTRootViewController.h"
 #import "UVTWord.h"
 
@@ -13,6 +15,7 @@
 @implementation UVTRootViewController
 @synthesize words;
 @synthesize uvtWordDetailViewController;
+@synthesize wordSearchBar;
 
 
 #pragma mark Table Management
@@ -27,20 +30,7 @@
 		selectedUVTWord = [words objectAtIndex:indexPath.row];
 	}
 	
-	if (self.uvtWordDetailViewController == nil) {
-		UVTWordDetailViewController* tempViewController = [[UVTWordDetailViewController alloc] initWithNibName:@"UVTWordDetailViewController" bundle:[NSBundle mainBundle]];
-		self.uvtWordDetailViewController = tempViewController;
-		[tempViewController release];
-	}
-
-	[self.navigationController pushViewController:uvtWordDetailViewController animated:YES];
-	self.uvtWordDetailViewController.title = selectedUVTWord.word;
-	self.uvtWordDetailViewController.selectedUVTWord = [[UVTWord alloc] initWithWord:selectedUVTWord.word 
-																			meanings:selectedUVTWord.meanings
-																			  usages:selectedUVTWord.usages];
-	NSArray* meanings = [selectedUVTWord.meanings allKeys];
-	//[uvtWordDetailViewController release];
-	//uvtWordDetailViewController = nil;
+	[self displayWordDetailView:selectedUVTWord];
 }
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
@@ -165,18 +155,15 @@
 }
 
 - (void) readWordsFromDatabase {
-	sqlite3* database;
 	words = [[NSMutableArray alloc] init];
 	
 	if (sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
-//		printf([databasePath UTF8String]);
 		const char* selectWordStmt = "select distinct Word from uvtWordMeaning";
 		sqlite3_stmt* compiledSelectWordStmt;
 		int returnV = sqlite3_prepare_v2(database, selectWordStmt, -1, &compiledSelectWordStmt, NULL); 
-		printf("%i",returnV);
-		printf( "could not prepare statemnt: %s\n", sqlite3_errmsg(database) ); 
+		//printf("%i",returnV);
+		//printf( "could not prepare statemnt: %s\n", sqlite3_errmsg(database) ); 
 		if (returnV == SQLITE_OK) {
-			printf("wawa");
 			while (sqlite3_step(compiledSelectWordStmt) == SQLITE_ROW) {
 				NSString* theWord = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectWordStmt, 0)];
 				NSMutableDictionary* theMeanings = [NSMutableDictionary dictionary];
@@ -189,8 +176,116 @@
 				
 				sqlite3_stmt* compiledSelectMeaningsStmt;
 				sqlite3_prepare_v2(database, selectMeaningsStmt, -1, &compiledSelectMeaningsStmt, NULL);
-				printf( "could not prepare statemnt: %s\n", sqlite3_errmsg(database) ); 
+				//printf( "could not prepare statemnt: %s\n", sqlite3_errmsg(database) ); 
 
+				while (sqlite3_step(compiledSelectMeaningsStmt) == SQLITE_ROW) {
+					NSString* theMeaningType = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectMeaningsStmt, 0)];
+					NSString* theMeaning = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectMeaningsStmt, 1)];
+					[theMeanings setObject:theMeaningType forKey:theMeaning];
+				}
+				
+				
+				NSString* selectUsagesStmtString = @"select UsageType, Usage from uvtWordUsage where Word = \"";
+				selectUsagesStmtString = [selectUsagesStmtString stringByAppendingString:theWord];
+				selectUsagesStmtString = [selectUsagesStmtString stringByAppendingString:@"\""];
+				const char* selectUsagesStmt = [selectUsagesStmtString UTF8String];
+				
+				sqlite3_stmt* compiledSelectUsagesStmt;
+				sqlite3_prepare_v2(database, selectUsagesStmt, -1, &compiledSelectUsagesStmt, NULL);
+				//printf( "could not prepare statemnt: %s\n", sqlite3_errmsg(database) ); 
+				
+				while (sqlite3_step(compiledSelectUsagesStmt) == SQLITE_ROW) {
+					NSString* theUsageType = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectUsagesStmt, 0)];
+					NSString* theUsage = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectUsagesStmt, 1)];
+					[theUsages setObject:theUsageType forKey:theUsage];
+				}
+								
+				UVTWord* theUVTWord = [[UVTWord alloc] initWithWord:theWord meanings:theMeanings usages:theUsages];
+				[words addObject:theUVTWord];
+				[theUVTWord release];
+			}
+		}
+		sqlite3_finalize(compiledSelectWordStmt);
+	}
+//	sqlite3_close(database);
+}
+
+
+- (void) helpButtonClicked {
+}
+
+#pragma mark View Management
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	databaseName = @"uvtDatabase.sqlite";
+	
+	NSArray* documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString* documentsDir = [documentPaths objectAtIndex:0];
+	databasePath = [documentsDir stringByAppendingPathComponent:databaseName];
+	
+	NSLog(databasePath);
+	
+	[self checkAndCreateDatabase];
+	[self readWordsFromDatabase];
+		
+	copyOfWords = [[NSMutableArray alloc] init];
+
+	//self.navigationItem.title = @"";
+
+	UIBarButtonItem* helpButton = [[UIBarButtonItem alloc]
+							 initWithTitle:@"Help"
+									style:UIBarButtonItemStyleBordered
+									target:self
+									action:@selector(helpButtonClicked)];
+	self.navigationItem.rightBarButtonItem = helpButton;
+	
+	self.tableView.tableHeaderView = wordSearchBar;
+	wordSearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
+	
+	searching = NO;
+	letUserSelectRow = YES;
+}
+
+- (BOOL)canBecomeFirstResponder {
+	return YES;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[self becomeFirstResponder];
+	[super viewDidAppear:animated];
+}
+
+- (NSMutableArray*)generateTopTenUnfamiliarWords {
+	NSMutableArray* topTenWords = [[NSMutableArray alloc] init];
+	printf("###");
+//	int returnValue = sqlite3_open([databasePath UTF8String], &database);
+//	printf("%i", returnValue);
+//	printf("tried open database: %s\n", sqlite3_errmsg(database));
+	
+//	if (sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
+		printf("$$$");
+		const char* selectMostUnfamiliarWordsStmt = "select * from uvtUserStat order by Score desc limit 10";
+		sqlite3_stmt* compiledSelectMostUnfamiliarWordsStmt;
+		int returnV = sqlite3_prepare_v2(database, selectMostUnfamiliarWordsStmt, -1, &compiledSelectMostUnfamiliarWordsStmt, NULL);
+		printf("%i", returnV);
+		printf("could not prepare statement:%s\n", sqlite3_errmsg(database));
+		if (returnV == SQLITE_OK) {
+			while (sqlite3_step(compiledSelectMostUnfamiliarWordsStmt) == SQLITE_ROW) {
+				NSString* theWord = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectMostUnfamiliarWordsStmt, 0)];
+				NSMutableDictionary* theMeanings = [NSMutableDictionary dictionary];
+				NSMutableDictionary* theUsages = [NSMutableDictionary dictionary];
+				
+				NSString* selectMeaningsStmtString = @"select MeaningType, Meaning from uvtWordMeaning where Word = \"";
+				selectMeaningsStmtString = [selectMeaningsStmtString stringByAppendingString:theWord];
+				selectMeaningsStmtString = [selectMeaningsStmtString stringByAppendingString:@"\""];
+				const char* selectMeaningsStmt = [selectMeaningsStmtString UTF8String];
+				
+				sqlite3_stmt* compiledSelectMeaningsStmt;
+				sqlite3_prepare_v2(database, selectMeaningsStmt, -1, &compiledSelectMeaningsStmt, NULL);
+				printf( "could not prepare statemnt: %s\n", sqlite3_errmsg(database) ); 
+				
 				while (sqlite3_step(compiledSelectMeaningsStmt) == SQLITE_ROW) {
 					NSString* theMeaningType = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectMeaningsStmt, 0)];
 					NSString* theMeaning = [NSString stringWithUTF8String:(char*)sqlite3_column_text(compiledSelectMeaningsStmt, 1)];
@@ -213,52 +308,51 @@
 					[theUsages setObject:theUsageType forKey:theUsage];
 				}
 				
-				printf("%u\n", [[theMeanings allKeys] count]);
-				
 				UVTWord* theUVTWord = [[UVTWord alloc] initWithWord:theWord meanings:theMeanings usages:theUsages];
-				[words addObject:theUVTWord];
+				[topTenWords addObject:theUVTWord];
 				[theUVTWord release];
 			}
+			
 		}
-		sqlite3_finalize(compiledSelectWordStmt);
+		sqlite3_finalize(compiledSelectMostUnfamiliarWordsStmt);
+//	}
+//	sqlite3_close(database);
+	
+	return topTenWords;
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent*)event {
+	if (motion == UIEventSubtypeMotionShake) {
+		printf("!!!");
+		NSMutableArray* topTenWords = [self generateTopTenUnfamiliarWords];
+		printf("???");
+		int wordIndex = arc4random() % 10;
+		[self displayWordDetailView:[topTenWords objectAtIndex:wordIndex]];
 	}
-	sqlite3_close(database);
+	return;
 }
 
 
-#pragma mark View Management
-
-- (void)viewDidLoad {
-	[super viewDidLoad];
+- (void)displayWordDetailView:(UVTWord*)selectedUVTWord {
+	if (self.uvtWordDetailViewController == nil) {
+		UVTWordDetailViewController* tempViewController = [[UVTWordDetailViewController alloc] initWithNibName:@"UVTWordDetailViewController" bundle:[NSBundle mainBundle]];
+		self.uvtWordDetailViewController = tempViewController;
+		[tempViewController release];
+	}
 	
-	databaseName = @"uvtDatabase.sqlite";
-	//databasePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:databaseName];
+	[self.navigationController pushViewController:uvtWordDetailViewController animated:YES];
+	self.uvtWordDetailViewController.title = selectedUVTWord.word;
+	self.uvtWordDetailViewController.selectedUVTWord = [[UVTWord alloc] initWithWord:selectedUVTWord.word 
+																			meanings:selectedUVTWord.meanings
+																			  usages:selectedUVTWord.usages];
+	[self.uvtWordDetailViewController initMeaning];
+	[self.uvtWordDetailViewController initUsage];
+	[self.uvtWordDetailViewController initQuestion];
 	
-	NSArray* documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString* documentsDir = [documentPaths objectAtIndex:0];
-	databasePath = [documentsDir stringByAppendingPathComponent:databaseName];
-	
-	
-//	printf(databasePath);
-	
-	[self checkAndCreateDatabase];
-	
-	[self readWordsFromDatabase];
-	
-	printf("lolo");
-	
-	copyOfWords = [[NSMutableArray alloc] init];
-	
-	self.tableView.tableHeaderView = wordSearchBar;
-	wordSearchBar.autocorrectionType = UITextAutocorrectionTypeNo;
-	
-	searching = NO;
-	letUserSelectRow = YES;
-	
-	printf("kaka");
-	//self.navigationItem.title = @"";
 }
 
+- (void)updateWord:(NSString*)word scoreChange:(NSInteger)change {
+}
 
 - (void)dealloc {
 	[words release];
