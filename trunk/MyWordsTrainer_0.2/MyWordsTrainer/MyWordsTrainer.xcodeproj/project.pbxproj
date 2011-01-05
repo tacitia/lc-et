@@ -15,15 +15,14 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		3E1BF9ED12C88490001C63FC /* UVTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BF9EC12C88490001C63FC /* UVTRootViewController.m */; };
 		3E1BFA4612C88CA9001C63FC /* UVTRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1BFA4512C88CA9001C63FC /* UVTRootViewController.xib */; };
-		3E1BFAA312C8B86A001C63FC /* UVTWordDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1BFAA212C8B86A001C63FC /* UVTWordDetailViewController.xib */; };
 		3E1BFAAC12C8B8EF001C63FC /* UVTWordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BFAAB12C8B8EF001C63FC /* UVTWordDetailViewController.m */; };
 		3E1BFB2B12C8C82D001C63FC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1BFB2A12C8C82D001C63FC /* libsqlite3.0.dylib */; };
 		3E1BFB3012C8C8B3001C63FC /* UVTWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BFB2F12C8C8B3001C63FC /* UVTWord.m */; };
 		3ED60EC212D1DF6100031825 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED60EC112D1DF6100031825 /* MainViewController.xib */; };
 		3ED60EC712D1E28D00031825 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED60EC612D1E28D00031825 /* MainViewController.m */; };
+		3EE8768512D449F5007002FD /* UVTIntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EE8768412D449F5007002FD /* UVTIntroView.xib */; };
+		3EE878FF12D489CC007002FD /* UVTWordDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EE878FE12D489CC007002FD /* UVTWordDetailViewController.xib */; };
 		3EFA1B9712CA5595000EDB5D /* uvtDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3EFA1B9612CA5595000EDB5D /* uvtDatabase.sqlite */; };
-		3EFA8F8C12D305B50096B864 /* UVTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFA8F8A12D305B50096B864 /* UVTMainViewController.m */; };
-		3EFA8F8D12D305B50096B864 /* UVTMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EFA8F8B12D305B50096B864 /* UVTMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		3E1BF9EB12C88490001C63FC /* UVTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTRootViewController.h; sourceTree = "<group>"; };
 		3E1BF9EC12C88490001C63FC /* UVTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVTRootViewController.m; sourceTree = "<group>"; };
 		3E1BFA4512C88CA9001C63FC /* UVTRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTRootViewController.xib; sourceTree = "<group>"; };
-		3E1BFAA212C8B86A001C63FC /* UVTWordDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTWordDetailViewController.xib; sourceTree = "<group>"; };
 		3E1BFAAA12C8B8EF001C63FC /* UVTWordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVTWordDetailViewController.h; sourceTree = "<group>"; };
 		3E1BFAAB12C8B8EF001C63FC /* UVTWordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVTWordDetailViewController.m; sourceTree = "<group>"; };
 		3E1BFB2A12C8C82D001C63FC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -48,10 +46,9 @@
 		3ED60EC112D1DF6100031825 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		3ED60EC512D1E28D00031825 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3ED60EC612D1E28D00031825 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3EE8768412D449F5007002FD /* UVTIntroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTIntroView.xib; sourceTree = "<group>"; };
+		3EE878FE12D489CC007002FD /* UVTWordDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTWordDetailViewController.xib; sourceTree = "<group>"; };
 		3EFA1B9612CA5595000EDB5D /* uvtDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = uvtDatabase.sqlite; sourceTree = "<group>"; };
-		3EFA8F8912D305B50096B864 /* UVTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVTMainViewController.h; path = ../UVTMainViewController.h; sourceTree = "<group>"; };
-		3EFA8F8A12D305B50096B864 /* UVTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UVTMainViewController.m; path = ../UVTMainViewController.m; sourceTree = "<group>"; };
-		3EFA8F8B12D305B50096B864 /* UVTMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UVTMainViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MyWordsTrainer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MyWordsTrainer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,8 +70,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3EFA8F8912D305B50096B864 /* UVTMainViewController.h */,
-				3EFA8F8A12D305B50096B864 /* UVTMainViewController.m */,
 				1D3623240D0F684500981E51 /* MyWordsTrainerAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MyWordsTrainerAppDelegate.m */,
 				3E1BF9EB12C88490001C63FC /* UVTRootViewController.h */,
@@ -121,11 +116,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3E1BFAA212C8B86A001C63FC /* UVTWordDetailViewController.xib */,
 				3ED60EC112D1DF6100031825 /* MainViewController.xib */,
+				3EE8768412D449F5007002FD /* UVTIntroView.xib */,
 				3EFA1B9612CA5595000EDB5D /* uvtDatabase.sqlite */,
+				3EE878FE12D489CC007002FD /* UVTWordDetailViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				3EFA8F8B12D305B50096B864 /* UVTMainViewController.xib */,
 				3E1BFA4512C88CA9001C63FC /* UVTRootViewController.xib */,
 				8D1107310486CEB800E47090 /* MyWordsTrainer-Info.plist */,
 			);
@@ -194,10 +189,10 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				3E1BFA4612C88CA9001C63FC /* UVTRootViewController.xib in Resources */,
-				3E1BFAA312C8B86A001C63FC /* UVTWordDetailViewController.xib in Resources */,
 				3EFA1B9712CA5595000EDB5D /* uvtDatabase.sqlite in Resources */,
 				3ED60EC212D1DF6100031825 /* MainViewController.xib in Resources */,
-				3EFA8F8D12D305B50096B864 /* UVTMainViewController.xib in Resources */,
+				3EE8768512D449F5007002FD /* UVTIntroView.xib in Resources */,
+				3EE878FF12D489CC007002FD /* UVTWordDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +209,6 @@
 				3E1BFAAC12C8B8EF001C63FC /* UVTWordDetailViewController.m in Sources */,
 				3E1BFB3012C8C8B3001C63FC /* UVTWord.m in Sources */,
 				3ED60EC712D1E28D00031825 /* MainViewController.m in Sources */,
-				3EFA8F8C12D305B50096B864 /* UVTMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
