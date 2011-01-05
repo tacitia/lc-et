@@ -212,6 +212,7 @@
 
 
 - (void) helpButtonClicked {
+	
 }
 
 #pragma mark View Management
@@ -353,6 +354,8 @@
 
 - (void)updateWord:(NSString*)word scoreChange:(NSInteger)change {
 }
+
+
 
 - (void)dealloc {
 	[words release];
